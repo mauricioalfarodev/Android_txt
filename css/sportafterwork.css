@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+footer {
+	height:28px;}
+
+.justify {
+	text-align:justify;
+}
+.centerAuto {
+	max-width:92%;
+	margin:auto;
+}
+.centerAuto img {
+	max-width:100%;
+	margin:auto;
+}
+.imgC {
+	text-align: center;
+}
+img {
+	border-style: none;
+}
+h3, h4 {
+	color: #BF0000;
+}
+.rose {
+	font-weight: bold;
+	color: #4D2379;
+}
+.imgMills {
+	padding-right: 10px;
+	padding-top: 3px;
+	margin-bottom: 0px;
+	float: left;
+}
+.resultats {
+	display:none;
+	text-align: center;
+	padding: 6px;
+	color: #FFF;
+	-moz-border-radius: .6em;
+	-webkit-border-radius: .6em;
+	border-radius: .6em;
+	
+}
+.ui-page-fullscreen .ui-header, .ui-page-fullscreen .ui-footer { opacity: 1; }
+/* button inner top highlight */
+.ui-btn-inner { border-top: 1px solid #000; border-color: rgba(0,0,0,.3);  }
+selector{
+	outline: none 0px;
+} 
+.smallTitle {
+	font-size: .8em;
+}
+.ui-btn-c:visited { color: #000; }
+
+
+
+/* IPAD */
+
+.portrait .ui-menu {
+	height:100%;
+	overflow:hidden;
+	/*background-color:#999*/
+}
+.landscape .ui-menu {
+	/*background-color:#999;*/
+	height:100%;
+	overflow:hidden;
+}
+
+/* FORM  */
+label.error {
+	/* remove the next line when you have trouble in IE6 with labels in list */
+	color: red;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+input.error textarea.error { border: 2px solid red; }
+

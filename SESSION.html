@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width"/>
+    	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    	<title>Ejercicio 18.1</title>
+        
+        <style>
+            button {
+                width: 90%;
+                height: 25px;
+                margin: 5px auto;
+            }
+            
+            ul{margin:0; padding:0; font-size:12px}
+            li{list-style-type:none; padding:10px 0; border-bottom: solid 1px #ccc }
+        </style>
+        <script type="text/javascript">
+            function validado () {
+               if (sessionStorage.validado!="true"){
+                alert("no estas logeados");
+               }
+            }
+            function guardar () {
+                sessionStorage["Nombre"] = $("#nombre").val();
+                sessionStorage["pass"] = $("#pass").val();
+            }
+            function leer () {
+                $("#nombre2").text("Acabas de inciar Sescion " + sessionStorage["validado"] + ", Como estas!");
+            }
+            function validar () {
+                if(sessionStorage.Nombre===$("#nombre").val() && sessionStorage.pass===$("#pass").val()){
+                    sessionStorage.validado = "true";
+                }
+            }
+        </script>
+        
+    	
+	</head>
+	<body onload="validado()">
+        <input type="text" name="nombre" id="nombre" value="">
+        <input type="text" name="pass" id="pass" value="">
+        <button onclick="guardar()"> Guardar </button>
+    	<button onclick="leer()"> leer</button><br>
+        <button onclick="validar()"> leer</button><br>
+        <br>
+        <br>
+        <br>
+        <label for="nombre" id="nombre2"></label>
+
+
+    	
+        
+	</body>
+</html>
